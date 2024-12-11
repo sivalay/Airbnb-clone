@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2")
+      format("woff2-variations");
+  font-style: normal;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Italics_W_Wght.4d5968bfe066c741d708adc61baed262.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Italics_W_Wght.4d5968bfe066c741d708adc61baed262.woff2")
+      format("woff2-variations");
+  font-style: italic;
+  unicode-range: U+0000-03FF, U+0500-058F, U+0700-074F, U+0780-FAFF, U+FE00-FE6F,
+    U+FF00-EFFFF, U+FFFFE-10FFFF;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  unicode-range: U+0600-06FF, U+0750-077F;
+  font-style: normal;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Arabic_W_Wght.d9f154d65b7b534fa988aba51062c8df.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Arabic_W_Wght.d9f154d65b7b534fa988aba51062c8df.woff2")
+      format("woff2-variations");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  unicode-range: U+0400-04FF;
+  font-style: normal;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Cyril_W_Wght.26f0964acf4eb88cb3589d38a3182964.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Cyril_W_Wght.26f0964acf4eb88cb3589d38a3182964.woff2")
+      format("woff2-variations");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  unicode-range: U+0590-05FF, U+FB00-FB4F;
+  font-style: normal;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Hebrew_W_Wght.33e5e2c8babc146eff37ebcaa12cb8bb.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Hebrew_W_Wght.33e5e2c8babc146eff37ebcaa12cb8bb.woff2")
+      format("woff2-variations");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_W_Wght.2d9d32865ef1262644c455b3ead871e9.woff2")
+      format("woff2-variations");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  unicode-range: U+0900-097F;
+  font-style: normal;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Deva_W_Wght.11994dc426c38d93ebc5f3cc27490d30.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Deva_W_Wght.11994dc426c38d93ebc5f3cc27490d30.woff2")
+      format("woff2-variations");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  unicode-range: U+0E00-0E7F;
+  font-style: normal;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_ThaiLp_W_Wght.61a8da9355421c30286deb6d36aa3fb0.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_ThaiLp_W_Wght.61a8da9355421c30286deb6d36aa3fb0.woff2")
+      format("woff2-variations");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Airbnb Cereal VF";
+  unicode-range: U+0370-03FF;
+  font-style: normal;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Greek_W_Wght.7f56bb1b50c0f29a313a57f55e55be5f.woff2")
+      format("woff2 supports variations"),
+    url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/cereal-variable/AirbnbCerealVF_Greek_W_Wght.7f56bb1b50c0f29a313a57f55e55be5f.woff2")
+      format("woff2-variations");
+  font-display: swap;
+}
+
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #000000;
+}
+li {
+  list-style-type: none;
+}
+
+/* mobile view */
+.main-container {
+  width: 100%;
+  height: auto;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Airbnb Cereal VF";
+  font-size: 0.875rem;
+  line-height: 1.43;
+  line-break: strict;
+  text-size-adjust: 100%;
+}
+/* navbar */
+.nav-container{
+  width: 100%;
+  height: 144px;
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  line-height: 20.02px;
+  max-width: 1440px;
+  text-size-adjust: 100%;
+}
+.top-nav-con{
+  width: 100%;
+}
+.nav-mob-container{
+  margin: 14px 16px 0;
+  padding: 0;
+  /* background-color: aqua; */
+}
+.nav-for-mob{
+  width: 100%;
+  height: 56px;
+  display: grid;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.01);
+  background-repeat: repeat; */
+  /* border: 1px solid rgba(0, 0, 0, 0.08 ); */
+
+}
+.nav-for-mob button{
+  /* position: relative; */
+  width: 286px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border-radius: 1000px;
+  border: 1px solid rgba(0, 0, 0, 0.08 );
+  box-sizing: border-box;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.01 );
+  padding: 0 3px;
+  margin-top: 1px;
+}
+.search{
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 6px 0 4px;
+}
+.text{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.text .t1{
+  width: 100%;
+  font-family: "Airbnb Cereal VF";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 0px;
+}
+.text .t2{
+  /* width: 100%; */
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 5px;
+  height: auto;
+  font-family: "Airbnb Cereal VF";
+  font-size: 12px;
+  font-weight: 400;
+  font-stretch: 100%;
+  color: #6A6A6A;
+  text-align: left;
+}
+.sec-nav-con{
+  width: 100%;
+  display: flex;
+}
+.logo-container{
+  width: 100%;
+  height: 72px;
+  text-size-adjust: 100%;
+  /* display: flex; */
+}
+.logos{
+  /* width: 100%; */
+  height: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
+  padding-inline-start: 24px;
+  padding-inline-end: 24px;
+  overflow: scroll;
+}
+.logo{
+  display: block;
+  position: static;
+  padding: 4px 0;
+  margin: 12px 0 10px;
+}
+.logo .log{
+  width: 88.4531px;
+  height: 52px;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 4px;
+  align-items: center;
+  justify-items: center;
+  color: rgb(106, 106, 106);
+}
+.log1{
+  height: 24px;
+}
+.des1{
+  /* height: 12px; */
+  height: fit-content;
+}
+.log1 img{
+  /* background-color: #000000; */
+  height: 24px;
+  width: 24px;
+}
+.des1 span{
+  /* height: 16px; */
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 500;
+}
