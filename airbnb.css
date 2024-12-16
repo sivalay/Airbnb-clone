@@ -130,6 +130,9 @@ li {
   max-width: 1440px;
   text-size-adjust: 100%;
 }
+/* .nav-container{
+  position: sticky;
+} */
 .top-nav-con{
   width: 100%;
 }
@@ -278,7 +281,6 @@ section{
   position: relative;
 }
 .container-for-contents{
-
   margin: 24px 0px 32px;
   padding: 0px 24px;
 }
@@ -287,15 +289,20 @@ section{
   gap: 40px;
 
 }
+.space{
+  height: 40px;
+}
 .container2{
   display: grid;
-  gap: 40px;
   margin-top: 52px;
 }
 .main-head h2{
-  font-size: 25px;
+  font-size: 32px;
+  font-weight: 500;
   font-family: "Airbnb Cereal VF";
-  margin-top: 0;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px;
 }
 .cont{
   width: 100%;
@@ -318,6 +325,8 @@ section{
 .cont .text{
   width: 100%;
   gap: 2px;
+  white-space: nowrap;
+  overflow: hidden;
   text-size-adjust: 100%;
 }
 .cont img{
@@ -334,6 +343,8 @@ section{
 .cont .text .head1{
   width: 100%;
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .text .small-head{
   width: 100%;
@@ -341,8 +352,121 @@ section{
   font-weight: 400;
   color: rgb(106, 106, 106);
 }
-.cont {
+
+/* _____Section 2_____ */
+
+.main-future-container{
   width: 100%;
+  background-color: #F7F7F7;
+}
+.future-container{
+  /* width: 100%; */
+  padding: 48px 24px;
+  display: grid;
+}
+.top-head h2{
+  width: 100%;
+  font-size: 22px;
+  font-family: "Airbnb Cereal VF";
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.01375rem;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  text-size-adjust: 100%;
+}
+.future-nav-container{
+  width: 100%;
+  text-size-adjust: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+.future-nav-container::-webkit-scrollbar{
+  display: none;
+}
+.future-nav{
+  display: grid;
+  grid-auto-flow: column;
+  padding: 0 12px;
+  margin: 0 -12px;
+}
+.future-nav .fn{
+  color: #6A6A6A;
+  font-size: 14px;
+  font-family: "Airbnb Cereal VF";
+  font-weight: 500;
+  line-height: 18px;
+  padding: 10px;
+  margin: 6px 6px 6px 0;
+  text-align: center;
+  text-wrap-mode: nowrap;
+  text-size-adjust: 100%;
+}
+.future-nav #fn1{
+  color: #222222;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  font-size: 14px;
+  background-color: #F7F7F7;
+  border-image-repeat: repeat;
+  font-family: "Airbnb Cereal VF";
+}
+.future-content-container{
+  width: 100%;
+}
+.future-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8px;
+  row-gap: 24px;
+  padding-top: 32px;
+}
+.future-content{
+  /* font-size: 0.875em; */
+  /* line-height: 1.125em; */
+  line-height: 18px;
+}
+.future-content .mt{
+  font-weight: 500;
+  color: #222222;
+}
+.future-content .st{
+  color: #6A6A6A;
+}
+#fucolast{
+  display: flex;
+  gap: 4px;
+  text-wrap-mode: nowrap;
+}
+#fucolast .st{
+  color: #222222;
+  margin-top: 3px;
+}
+footer{
+  width: 100%;
+}
+.footer-container{
+  padding: 0 24px;
+}
+.footer-content-contianer, .footer-end{
+  padding: 24px 0;
+}
+.footer-content-contianer h3{
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Airbnb Cereal VF";
+  line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/*  */
+
+/* .cont {
+  width: 100px;
   height: auto;
   font-size: 15px;
   font-weight: 500;
@@ -350,17 +474,60 @@ section{
   display: grid;
   grid-auto-flow: row;
   row-gap: 10px;
-}
-.nav-for-mob{
+} */
+/* .nav-for-mob{
   width: 100%;
   height: 56px;
   display: grid;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  border-radius: 10px;
+  border-radius: 10;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-sizing: border-b;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 10px 0px;
+  background-repeat: repeat;
+} */
+ /* .nav-for-mob{
+  width: 100%;
+  height: 56px;
+  display: grid;
+  flex-basis: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-radius: 1000px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 10px 0px;
+  background-color: #ffffff;
   background-repeat: repeat;
-}
+ } */
+/* .cont img{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  white-space: nowrap;
+  background-attachment: scroll;
+  grid-column-start: 1;
+  grid-column-end: 10;
+}  */
+/* .text .small-head{
+  display: block;
+  width: 100%;
+  height: auto;
+  font-weight: 400;
+  color: rgb(106, 106, 106);
+} */
+/* .cont img{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  white-space: nowrap;
+  background-attachment: scroll;
+  grid-column-start: 1;
+  grid-column-end: 10;
+} */
