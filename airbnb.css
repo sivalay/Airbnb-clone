@@ -706,6 +706,14 @@ footer{
 /* tablet view */
 
 @media screen and (min-width:768px) {
+
+  /* _____Nav_____ */
+
+  .nav-container{
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 2px 0px;
+
+  }
   .nav-mob-container{
     display: none;
   }
@@ -713,14 +721,18 @@ footer{
     box-shadow: 4px;
   }
   .nav-tab-container{
-    width: 100%;
-    display: flex;
-  }
-  .nav-for-tab{
+    /* width: 100%; */
     display: flex;
     padding-inline: 40px;
+    text-size-adjust: 100%;
+
+  }
+  .nav-for-tab{
+    max-width: 100%;
+    display: flex;
     align-items: center;
     justify-content: flex-start;
+    text-size-adjust: 100%;
   }
   .site-main-logo .si-ma-lo{
     height: 80px;
@@ -729,20 +741,171 @@ footer{
     align-items: center;
   }
   .button-container{
+    height: 48px;
     display: flex;
+    padding: 0px 24px;
+    max-width: 348px !important;
+    text-size-adjust: 100%;
   }
   .btnc-1{
-    padding-inline: 24px;
-    /* min-width: 348px; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+    justify-content: flex-start;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+    text-size-adjust: 100%;
   }
   .btnc-1 button{
+    padding: 0;
+    min-width: 0;
+    height: 48px;
     border: none;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Airbnb Cereal VF";
+    border-radius: 30px;
+    align-items: center;
+    white-space: nowrap;
+    color: #222222;
     background-color: #ffffff;
   }
+  .btnc-1 .side-line{
+    width: 1px;
+    height: 25px;
+    color: #222222;
+    background-color: #DDDDDD;
+  }
+
+  .btnc-1 .bc2{
+    padding-left: 8px;
+  }
+  .btnc-1 button div{
+    display: inline-block;
+    padding-inline: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    text-wrap-mode: nowrap;  
+  }
+  .btnc-1 .bc1 .bc11{
+    color: #6A6A6A;
+    font-weight: 400;
+  }
+  .btnc-1 .bc1 .bc12{
+    padding: 10px;
+    color: #ffffff;
+    margin: 7px 7px 7px 0;
+    background-color: #FF385C;
+    border-radius: 50%;
+  }
   .right-tab-nav{
+    height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+  }
+  .right-tab-nav .rtn1{
+    display: flex;
+    padding-right: 8px;
+    justify-content: flex-end;
+  }
+  .right-tab-nav .rtn1 .tnd1{
+    padding: 15px 15px 15px 0;
+    color: #222222;
+    font-weight: 500;
+    text-wrap-mode: nowrap;
+  }
+  .right-tab-nav .rtn1 .tnd2{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+  }
+  .right-tab-nav .rtn-b button{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 8px 8px 8px 14px;
+  }
+  .right-tab-nav .rtn-b .rtn-b1{
+    color: rgb(34,34,34);
+  }
+  .right-tab-nav .rtn-b .rtn-b2{
+    color: rgb(106, 106, 106);
+    margin-left: 14px;
+  }
+  .nav-container::after{
+    display: none;
+  }
+  .logo-container{
+    height: 78px;
+  }
+  .logo-container::after{
+    /* border: 3px solid #222222; */
+    width: 100%;
+    height: 0.5px;
+    font-size: 14px;
+    content: '';
+    background-repeat: repeat;
+    box-shadow: rgb(0 0 0/16%) 0 0 calc(2px + 4px);
+    z-index: 1;
+  }
+  .logos{
+    padding-inline: 40px;
+    column-gap: 32px;
+  }
+  .logo .log{
+    row-gap: 8px;
+    margin-top: -2px;
+    min-width: 56px;
+  }
+  #fm{
+    margin-right: 8px;
+  }
+  #fm1::after{
+    margin: 12px 0px 0px 13px;
+  }
+  .line1{
+    width: 100%;
+    height: 0.5px;
+    font-size: 14px;
+    background-color: #DDDDDD;
+    border-image-repeat: repeat;
+    font-family: "Airbnb Cereal VF";
+  }
+  .underline{
+    width: 100%;
+    height: 0.5px;
+    font-size: 13px;
+    background-color: #F7F7F7;
+    border-image-repeat: repeat;
+    font-family: "Airbnb Cereal VF";
+  }
+
+  /*_____ Sec2 ____ */
+  .container-for-contents{
+    /* margin: 0px 40px; */
+    padding: 0px 40px;
+  }
+  .container1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .space{
+    display: none;
   }
 
 }
+
