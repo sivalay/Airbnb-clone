@@ -375,12 +375,13 @@ section{
   gap: 40px;
 
 }
-.space{
+/* .space{
   height: 40px;
-}
+} */
 .container2{
   position: relative;
   display: grid;
+  gap: 40px;
   margin-top: 52px;
 }
 .main-head h2{
@@ -389,7 +390,9 @@ section{
   font-family: "Airbnb Cereal VF";
   line-height: 36px;
   letter-spacing: -0.02em;
-  margin: 0 0 24px;
+  /* margin: 0 0 24px; */
+  margin-bottom: -28px;
+  margin-top: 52px;
 }
 .cont{
   position: relative;
@@ -515,6 +518,10 @@ section{
   color: #222222;
   margin-left: -10px;
 }
+.future-nav #fn1 .line1{
+  display: none;
+  /* background-color: #F7F7F7; */
+}
 .future-nav #fn1::after{
   height: 2px;
   width: 50px;
@@ -526,7 +533,7 @@ section{
   color: #222222;
   background-color: #222222;
   box-sizing: border-box;
-  margin: 14px 0px 0px -25px;
+  margin: 32px 0px 0px -50px;
 }
 .future-next-button{
   top: 109px;
@@ -565,6 +572,9 @@ section{
 
 .future-content{
   line-height: 18px;
+}
+.future-content #fuco1{
+  display: none;
 }
 .future-content .mt{
   font-weight: 500;
@@ -619,6 +629,9 @@ footer{
   display: flex;
   gap: 24px;
 }
+.end-top-tab{
+  display: none;
+}
 .left-top{
   display: flex;
   gap: 8px;
@@ -647,7 +660,7 @@ footer{
   color: #222222;
   margin-top: 23px;
   display: grid;
-  gap: 2px;
+  gap: 8px;
 }
 .end .fe{
   line-height: 18px;
@@ -655,35 +668,37 @@ footer{
 .end .le{
   display: flex;
   flex-flow: column;
+  gap: 4px;
 }
-.end .le .le1{
+.end .le .last-end{
   display: flex;
   align-items: center;
   line-height: 26px!important;
   box-sizing: border-box;
-  margin-top: 2px;
+  white-space: nowrap;
+  text-wrap-mode: nowrap;
+}
+.end .le .end-last{
+  display: flex;
+  align-items: center;
+  line-height: 26px!important;
+  box-sizing: border-box;
   white-space: nowrap;
 }
-.end .le #le2{
-  margin-top: 0px;
-}
-.le1 li{
+.last-end li{
   display: inline-block;
-  line-height: 1.625rem;
+  line-height: 1.125rem;
   box-sizing: border-box;
   left: 0px;
   white-space: nowrap;
 }
 
-.le1 span{
+.last-end span{
   font-size: 14px !important;
   display: inline-block;
   width: 19px !important;
   line-height: 1.125rem !important;
   text-align: center;       
-}
-.le1 #le12{
-  white-space: nowrap;
 }
 
 /* View for Large Mobile */
@@ -692,11 +707,12 @@ footer{
   .nav-mob-container{
     margin-inline: 24px;
   }
+  .end{
+    gap: 4px;
+  }
   .end .le{
     flex-flow: row;
-  }
-  .end .le #le2{
-    margin-top: 2px;
+    gap: 0;
   }
   .future-next-button{
     top: 83px;
@@ -893,19 +909,109 @@ footer{
     font-family: "Airbnb Cereal VF";
   }
 
-  /*_____ Sec2 ____ */
+  /*_____ Section _____ */
+
   .container-for-contents{
-    /* margin: 0px 40px; */
+    margin: 24px 0px 48px;
     padding: 0px 40px;
   }
   .container1{
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
-  .space{
-    display: none;
+  .container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 40px;
+    /* white-space: nowrap; */
   }
 
+  /* _____Section2_____ */
+
+  .future-container{
+    padding: 48px 40px;
+  }
+  .future-next-button{
+    right: 27px;
+  }
+  .future-content #fuco1{
+    display: block;
+  }
+  /* .future-nav .fn{
+    margin: 6px 6px 6px 0px;
+  } */
+  /* .future-nav #fn1::after{
+    display: none;
+    margin: 0px 0px -5px 0px;
+  } */
+  
+  /* ______Footer______ */
+
+  .footer-container{
+    padding: 0 40px;
+  }
+  .footer-content #sci{
+    margin-bottom: 0px;
+  }
+  .footer-end{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .end-top{
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 17px;
+    gap: 0;
+  }
+  .center-top{
+    margin-left: 24px;
+  }
+  .end-top-tab{
+    margin-left: 48px;
+    display: flex;
+    gap: 16px;
+  }
+  .end{
+    margin-top: 0px;
+    margin-bottom: 1px;
+    display: grid;
+    gap: 3px;
+    justify-items: center;
+  }
+  .end .le{
+    height: 18px;
+  }
 }
 
+
+.footer-content-contianer h3{
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Airbnb Cereal VF";
+  line-height: 18px;
+  margin-top: 0;
+  color: #222222;
+  margin-bottom: 12px;
+}
+.footer-content-contianer{
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Airbnb Cereal VF";
+  line-height: 18px;
+  margin-top: 0;
+  color: #222222;
+  margin-bottom: 12px;
+}
+.footer-content-contianer h3{
+  font: 14px;
+  font-weight: 500;
+  font-family: "Airbnb Cereal VF";
+  line-height: 18px;
+  margin-top: 0;
+  color: #222222;
+  margin-bottom: 12px;
+}
