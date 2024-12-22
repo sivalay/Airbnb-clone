@@ -987,31 +987,3 @@ footer{
   }
 }
 
-
-.footer-content-contianer h3{
-  font-size: 14px;
-  font-weight: 500;
-  font-family: "Airbnb Cereal VF";
-  line-height: 18px;
-  margin-top: 0;
-  color: #222222;
-  margin-bottom: 12px;
-}
-.footer-content-contianer{
-  font-size: 14px;
-  font-weight: 500;
-  font-family: "Airbnb Cereal VF";
-  line-height: 18px;
-  margin-top: 0;
-  color: #222222;
-  margin-bottom: 12px;
-}
-.footer-content-contianer h3{
-  font: 14px;
-  font-weight: 500;
-  font-family: "Airbnb Cereal VF";
-  line-height: 18px;
-  margin-top: 0;
-  color: #222222;
-  margin-bottom: 12px;
-}
