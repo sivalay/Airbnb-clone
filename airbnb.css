@@ -770,7 +770,7 @@ footer{
     flex-flow:row;
     align-items: center;
     justify-content: flex-start;
-    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border: 0.5px solid rgba(0, 0, 0, 0.13);
     border-radius: 30px;
     text-size-adjust: 100%;
   }
@@ -844,15 +844,18 @@ footer{
     display: flex;
     padding: 15px;
     align-items: center;
+    /* margin-right: 5px; */
+    /* margin-left: -10px; */
   }
   .right-tab-nav .rtn-b button{
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border: 0.5px solid rgba(0, 0, 0, 0.13);
     background-color: #ffffff;
     border-radius: 40px;
-    padding: 8px 8px 8px 14px;
+    padding: 7px 8px 7px 14px;
+    /* margin-left: -11px; */
   }
   .right-tab-nav .rtn-b .rtn-b1{
     color: rgb(34,34,34);
@@ -939,13 +942,6 @@ footer{
   .future-content #fuco1{
     display: block;
   }
-  /* .future-nav .fn{
-    margin: 6px 6px 6px 0px;
-  } */
-  /* .future-nav #fn1::after{
-    display: none;
-    margin: 0px 0px -5px 0px;
-  } */
   
   /* ______Footer______ */
 
@@ -987,3 +983,38 @@ footer{
   }
 }
 
+.last-end li{
+  display: inline-block;
+  line-height: 1.125rem;
+  box-sizing: border-box;
+  left: 0px;
+  white-space: nowrap;
+}
+
+.last-end span{
+  font-size: 14px !important;
+  display: inline-block;
+  width: 19px !important;
+  line-height: 1.125rem !important;
+  text-align: center;       
+}
+.top-head h2{
+  width: 100%;
+  font-size: 22px;
+  font-family: "Airbnb Cereal VF";
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.01375rem;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  text-size-adjust: 100%;
+}
+.left-top{
+  display: flex;
+  gap: 8px;
+  height: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.125rem;
+  text-align: center;
+}
