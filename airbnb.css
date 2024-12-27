@@ -123,12 +123,13 @@ li {
 .nav-container{
   width: 100%;
   height: 144px;
-  position: sticky;
+  position: relative;
   display: flex;
   flex-flow: column;
   line-height: 20.02px;
   max-width: 1440px;
   text-size-adjust: 100%;
+  margin-top: 0px;
 }
 /* .nav-container::after{
   left: 0;
@@ -375,9 +376,6 @@ section{
   gap: 40px;
 
 }
-/* .space{
-  height: 40px;
-} */
 .container2{
   position: relative;
   display: grid;
@@ -390,7 +388,6 @@ section{
   font-family: "Airbnb Cereal VF";
   line-height: 36px;
   letter-spacing: -0.02em;
-  /* margin: 0 0 24px; */
   margin-bottom: -28px;
   margin-top: 52px;
 }
@@ -497,12 +494,15 @@ section{
   display: none;
 }
 .future-nav{
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  /* gap: 0; */
+  /* grid-auto-flow: column; */
   padding: 0 12px;
   margin: 0 -12px;
+  white-space: nowrap;
 }
 .future-nav .fn{
+  width: fit-content;
   color: #6A6A6A;
   font-size: 14px;
   font-family: "Airbnb Cereal VF";
@@ -568,9 +568,6 @@ section{
   column-gap: 8px;
   row-gap: 24px;
   padding-top: 32px;
-}
-
-.future-content{
   line-height: 18px;
 }
 .future-content #fuco1{
@@ -719,6 +716,18 @@ footer{
   }
 }
 
+/* view-in-550px */
+@media screen and (min-width:550px) {
+  .container1{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+  }
+}
 /* tablet view */
 
 @media screen and (min-width:768px) {
@@ -727,143 +736,159 @@ footer{
 
   .nav-container{
     height: auto;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 2px 0px;
-
+    box-shadow: rgba(0, 0, 0, 0.01);
   }
   .nav-mob-container{
     display: none;
   }
-  .nav-container::after{
-    box-shadow: 4px;
-  }
   .nav-tab-container{
-    /* width: 100%; */
-    display: flex;
-    padding-inline: 40px;
-    text-size-adjust: 100%;
-
+    display: block;
+    width: 100%;
   }
+  /* .nav-tab-container::after{
+    width: 100%;
+    height: 0.05px;
+    content: '';
+    position: relative;
+    display: block;
+    border: 0.05px solid #DDDDDD;
+    --box-shadow: rgb(0 0 0/16%) 0 0 calc(3px);
+    background-repeat: repeat;
+    box-sizing: border-box;
+  } */
   .nav-for-tab{
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-size-adjust: 100%;
-  }
-  .site-main-logo .si-ma-lo{
     height: 80px;
     display: flex;
+    padding-inline: 40px;
+    align-items: center;
+  }
+  .site-main-logo{
+    display: flex;
+    height: 80px;
+    flex: 0 0 auto;
     color: #FF385C;
     align-items: center;
   }
   .button-container{
-    height: 48px;
     display: flex;
     padding: 0px 24px;
-    max-width: 348px !important;
-    text-size-adjust: 100%;
+    flex: 0 1 auto;
+    min-width: 333.750px;
   }
-  .btnc-1{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow:row;
+  .bt-co-tab{
+    max-width: 100%;
+    text-align: left;
+    display: inline-block;
+  }
+  .bt-co{
+    max-width: 100%;
+    display: inline-flex;
+    position: relative;
+    background-color: #ffffff;
+    border: 0.5px solid #DDDDDD;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
     align-items: center;
-    justify-content: flex-start;
-    border: 0.5px solid rgba(0, 0, 0, 0.13);
+    text-align: left;
     border-radius: 30px;
-    text-size-adjust: 100%;
   }
-  .btnc-1 button{
+  .bt-co button{
     padding: 0;
-    min-width: 0;
-    height: 48px;
+    height: 46px;
     border: none;
-    display: flex;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
     font-size: 14px;
     font-weight: 500;
+    line-height: 22px;
+    flex: 0 1 auto;
+    z-index: 1;
+    color: #222222;
     font-family: "Airbnb Cereal VF";
-    border-radius: 30px;
-    align-items: center;
-    white-space: nowrap;
-    color: #222222;
+    position: relative;
     background-color: #ffffff;
+    border-radius: 30px;
   }
-  .btnc-1 .side-line{
+  .side-line{
     width: 1px;
-    height: 25px;
-    color: #222222;
+    height: 24px;
+    color: #DDDDDD;
     background-color: #DDDDDD;
   }
-
-  .btnc-1 .bc2{
+  .bt-co .btc-1{
     padding-left: 8px;
   }
-  .btnc-1 button div{
-    display: inline-block;
-    padding-inline: 16px;
-    line-height: 22px;
-    letter-spacing: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;  
-    text-wrap-mode: nowrap;  
+  .bt-co .btc-3 {
+    display: flex;
+    align-items: center;
   }
-  .btnc-1 .bc1 .bc11{
+  .bt-co .btc-3 #tc3{
     color: #6A6A6A;
     font-weight: 400;
   }
-  .btnc-1 .bc1 .bc12{
+  .bt-co .btc-3 .sb{
+    border-radius: 50%;
     padding: 10px;
     color: #ffffff;
-    margin: 7px 7px 7px 0;
+    margin: 7px 7px 7px 0px;
     background-color: #FF385C;
-    border-radius: 50%;
   }
-  .right-tab-nav{
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  .bt-co #tc1 div{
+    max-width: 61.83px;
   }
-  .right-tab-nav .rtn1{
-    display: flex;
-    padding-right: 8px;
-    justify-content: flex-end;
+  .bt-co #tc2 div{
+    max-width: 59.07px;
   }
-  .right-tab-nav .rtn1 .tnd1{
-    padding: 15px 15px 15px 0;
-    color: #222222;
-    font-weight: 500;
+  .bt-co #tc3 div{
+    max-width: 65.86px;
+  }
+  .bt-co .text-con div{
+    padding: 0px 16px;
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-wrap-mode: nowrap;
+    white-space: nowrap;
   }
-  .right-tab-nav .rtn1 .tnd2{
-    display: flex;
-    padding: 15px;
-    align-items: center;
-    /* margin-right: 5px; */
-    /* margin-left: -10px; */
-  }
-  .right-tab-nav .rtn-b button{
+  .Airbnb-home-container{
+    width: 100%;
+    height: 80px;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    border: 0.5px solid rgba(0, 0, 0, 0.13);
-    background-color: #ffffff;
-    border-radius: 40px;
+    justify-content: flex-end;
+  }
+  .home-container{
+    display: flex;
+    align-items: center;
+  }
+  .home-logo-container{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-right: 8px;
+  }
+  .home-logo-container .home{
+    padding: 12px;
+    white-space: nowrap;
+  }
+  .home-logo-container .home-logo{
+    padding: 12px;
+  }
+  .person-menu-container{
+    display: flex;
     padding: 7px 8px 7px 14px;
-    /* margin-left: -11px; */
+    gap: 14px;
+    border: 0.5px solid #DDDDDD;
+    border-radius: 40px;
+    background-color: #ffffff;
+    align-items: center;
   }
-  .right-tab-nav .rtn-b .rtn-b1{
+  .person-menu-container .menu{
     color: rgb(34,34,34);
   }
-  .right-tab-nav .rtn-b .rtn-b2{
+  .person-menu-container{
     color: rgb(106, 106, 106);
-    margin-left: 14px;
   }
+  
   .nav-container::after{
     display: none;
   }
@@ -871,14 +896,16 @@ footer{
     height: 78px;
   }
   .logo-container::after{
-    /* border: 3px solid #222222; */
     width: 100%;
     height: 0.5px;
     font-size: 14px;
     content: '';
     background-repeat: repeat;
-    box-shadow: rgb(0 0 0/16%) 0 0 calc(2px + 4px);
+    box-shadow: rgb(0 0 0/16%) 0 0 calc(3px);
     z-index: 1;
+    position: relative;
+    display: block;
+
   }
   .logos{
     padding-inline: 40px;
@@ -899,6 +926,7 @@ footer{
     width: 100%;
     height: 0.5px;
     font-size: 14px;
+    /* background: 0.05px solid #DDDDDD; */
     background-color: #DDDDDD;
     border-image-repeat: repeat;
     font-family: "Airbnb Cereal VF";
@@ -919,7 +947,6 @@ footer{
     padding: 0px 40px;
   }
   .container1{
-    /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
@@ -983,12 +1010,58 @@ footer{
   }
 }
 
-.left-top{
-  display: flex;
-  gap: 8px;
-  height: 18px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.125rem;
-  text-align: center;
+@media screen and (min-width:787px) {
+  .button-container{
+    min-width: 352.570px;
+  }
+  .bt-co{
+    max-width: 100%;
+  }
+  .bt-co #tc1 div{
+    max-width: 100%;
+  }
+  .bt-co #tc2 div{
+    max-width: 100%;
+  }
+  .bt-co #tc3 div{
+    max-width: 100%;
+  }
+}
+@media screen and (min-width:950px) {
+  .button-container{
+    flex: 0 1 auto;
+    text-align: center;
+  }
+  .Airbnb-home-container{
+    flex: 1 0 140px;
+  }
+  .site-main-logo{
+    flex: 1 0 140px;
+  }
+  .container1{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container2{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* _____sec2_____ */
+
+  .future-next-button{
+    display: none;
+  }
+  .future-content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* _____footer_____ */
+  #footer-line{
+    display: none;
+  }
+  .footer-start{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .footer-content-contianer{
+    padding: 48px 0px;
+  }
 }
