@@ -544,13 +544,13 @@ section{
 .future-next-button{
   top: 109px;
   right: 12px;
-  width: 33px;
+  width: 36px;
   height: 50px;
   display: flex;
   position: absolute;
   align-items: center;
   justify-content: flex-end;
-  background: linear-gradient(to right, transparent,#F7F7F7,#F7F7F7,#F7F7F7,#F7F7F7);
+  background: linear-gradient(to right, transparent, #F7F7F7,#F7F7F7,#F7F7F7 55px);
 }
 .future-next-button button{
   border: none;
@@ -964,6 +964,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background-image: linear-gradient(to right, rgb(255 255 255 / 0), white 40px);
     position: relative;
     right: 40px;
   }
