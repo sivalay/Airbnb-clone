@@ -1166,6 +1166,11 @@ footer{
   }
   .next-button{
     right: 80px;
+    padding-right: 80px;
+    margin-right: -80px;
+  }
+  .next-button{
+    right: 80px;
   }
   /* _____Sec_____ */
   .container-for-contents{
